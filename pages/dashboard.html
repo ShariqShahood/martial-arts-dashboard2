@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Profile Card -->
+<div class="profile-card">
+    <div class="profile-header">
+        <img src="edit.jpg" alt="Member" class="profile-image">
+        <div class="profile-info">
+            <h2>SHARIQ SHAHOOD</h2>
+            <p>Black Belt - 3rd Dan</p>
+            <span class="member-badge">Active Member</span>
+            <div class="profile-actions">
+                <button class="btn btn-primary">
+                    <i class="fas fa-plus-circle"></i> Add Credit
+                </button>
+                <button class="btn btn-outline-primary">
+                    <i class="fas fa-dumbbell"></i> Create Workout
+                </button>
+                <button class="btn btn-outline-secondary">
+                    <i class="fas fa-edit"></i> Edit Profile
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Metric Cards -->
+<div class="row">
+    <div class="col-md-3 col-sm-6">
+        <div class="metric-card">
+            <div class="metric-icon email">
+                <i class="far fa-envelope"></i>
+            </div>
+            <div class="metric-value">24</div>
+            <div class="metric-label">Emails Sent</div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="metric-card">
+            <div class="metric-icon attendance">
+                <i class="far fa-calendar-check"></i>
+            </div>
+            <div class="metric-value">89%</div>
+            <div class="metric-label">Attendance</div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="metric-card">
+            <div class="metric-icon tasks">
+                <i class="fas fa-tasks"></i>
+            </div>
+            <div class="metric-value">12</div>
+            <div class="metric-label">Tasks</div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="metric-card">
+            <div class="metric-icon invoices">
+                <i class="fas fa-file-invoice"></i>
+            </div>
+            <div class="metric-value">7</div>
+            <div class="metric-label">Invoices</div>
+        </div>
+    </div>
+</div>
+
+<!-- Tabs -->
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+        <a class="nav-link" href="#">Profile</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Notes</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Attendance</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" href="#">Invoice</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Payments</a>
+    </li>
+</ul>
+
+<!-- Contracts Section -->
+<div class="contracts-section">
+    <div class="section-header">
+        <h3 class="section-title">Membership Contracts</h3>
+        <button class="btn btn-primary">
+            <i class="fas fa-plus"></i> New Contract
+        </button>
+    </div>
+    
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Contract ID</th>
+                    <th>Type</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#CT-1001</td>
+                    <td>Premium Membership</td>
+                    <td>Jan 15, 2023</td>
+                    <td>Jan 15, 2024</td>
+                    <td><span class="status-badge status-active">Active</span></td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                Actions
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">View Details</a></li>
+                                <li><a class="dropdown-item" href="#">Renew</a></li>
+                                <li><a class="dropdown-item" href="#">Cancel</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#CT-0987</td>
+                    <td>Basic Membership</td>
+                    <td>Aug 10, 2022</td>
+                    <td>Aug 10, 2023</td>
+                    <td><span class="status-badge status-expired">Expired</span></td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                Actions
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">View Details</a></li>
+                                <li><a class="dropdown-item" href="#">Renew</a></li>
+                                <li><a class="dropdown-item" href="#">Archive</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#CT-1123</td>
+                    <td>Private Training</td>
+                    <td>Mar 05, 2023</td>
+                    <td>Jun 05, 2023</td>
+                    <td><span class="status-badge status-pending">Pending</span></td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                Actions
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">View Details</a></li>
+                                <li><a class="dropdown-item" href="#">Approve</a></li>
+                                <li><a class="dropdown-item" href="#">Reject</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Personal Info Section -->
+<div class="personal-info-section">
+    <div class="section-header">
+        <h3 class="section-title">Personal Information</h3>
+        <button class="btn btn-outline-primary">
+            <i class="fas fa-edit"></i> Edit Info
+        </button>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-6">
+            <div class="info-group">
+                <div class="info-label">Full Name</div>
+                <div class="info-value">Alex Johnson</div>
+            </div>
+            <div class="info-group">
+                <div class="info-label">Email Address</div>
+                <div class="info-value">alex.johnson@example.com</div>
+            </div>
+            <div class="info-group">
+                <div class="info-label">Phone Number</div>
+                <div class="info-value">+1 (555) 123-4567</div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="info-group">
+                <div class="info-label">Date of Birth</div>
+                <div class="info-value">March 15, 1985</div>
+            </div>
+            <div class="info-group">
+                <div class="info-label">Emergency Contact</div>
+                <div class="info-value">Sarah Johnson - +1 (555) 987-6543</div>
+            </div>
+            <div class="info-group">
+                <div class="info-label">Member Since</div>
+                <div class="info-value">January 10, 2020</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="info-group">
+        <div class="info-label">Tags</div>
+        <div class="tags-container">
+            <span class="tag">Black Belt</span>
+            <span class="tag">Instructor</span>
+            <span class="tag">Competitor</span>
+            <span class="tag">Private Lessons</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

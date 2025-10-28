@@ -1,0 +1,525 @@
+<div class="page-header">
+    <h1>Settings</h1>
+    <p>Configure dojo settings and preferences</p>
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <div class="list-group" id="settingsMenu">
+            <a href="#" class="list-group-item list-group-item-action active" data-setting="general">General</a>
+            <a href="#" class="list-group-item list-group-item-action" data-setting="membership">Membership</a>
+            <a href="#" class="list-group-item list-group-item-action" data-setting="billing">Billing</a>
+            <a href="#" class="list-group-item list-group-item-action" data-setting="notifications">Notifications</a>
+            <a href="#" class="list-group-item list-group-item-action" data-setting="security">Security</a>
+            <a href="#" class="list-group-item list-group-item-action" data-setting="integrations">Integrations</a>
+        </div>
+    </div>
+    <div class="col-md-9">
+        <!-- General Settings -->
+        <div class="page-section setting-content active" id="general-settings">
+            <h3 class="section-title mb-4">General Settings</h3>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-4">
+                        <label for="dojoName" class="form-label">Dojo Name</label>
+                        <input type="text" class="form-control" id="dojoName" value="DojoMaster Martial Arts">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-4">
+                        <label for="dojoPhone" class="form-label">Phone Number</label>
+                        <input type="text" class="form-control" id="dojoPhone" value="(555) 123-4567">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-4">
+                <label for="dojoEmail" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="dojoEmail" value="info@dojomaster.com">
+            </div>
+            
+            <div class="mb-4">
+                <label for="dojoAddress" class="form-label">Address</label>
+                <textarea class="form-control" id="dojoAddress" rows="3">123 Martial Arts Way, Cityville, State 12345</textarea>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-4">
+                        <label for="timezone" class="form-label">Timezone</label>
+                        <select class="form-select" id="timezone">
+                            <option selected>Eastern Time (ET)</option>
+                            <option>Central Time (CT)</option>
+                            <option>Mountain Time (MT)</option>
+                            <option>Pacific Time (PT)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-4">
+                        <label for="currency" class="form-label">Currency</label>
+                        <select class="form-select" id="currency">
+                            <option selected>US Dollar (USD)</option>
+                            <option>Euro (EUR)</option>
+                            <option>British Pound (GBP)</option>
+                            <option>Japanese Yen (JPY)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-check form-switch mb-4">
+                <input class="form-check-input" type="checkbox" id="maintenanceMode" checked>
+                <label class="form-check-label" for="maintenanceMode">
+                    Enable maintenance mode
+                </label>
+            </div>
+            
+            <div class="form-check form-switch mb-4">
+                <input class="form-check-input" type="checkbox" id="onlineBooking" checked>
+                <label class="form-check-label" for="onlineBooking">
+                    Enable online class booking
+                </label>
+            </div>
+            
+            <button class="btn btn-primary">Save Changes</button>
+        </div>
+
+        <!-- Membership Settings -->
+        <div class="page-section setting-content" id="membership-settings">
+            <h3 class="section-title mb-4">Membership Settings</h3>
+            
+            <div class="mb-4">
+                <label class="form-label">Membership Plans</label>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Plan Name</th>
+                                <th>Price</th>
+                                <th>Classes/Month</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Basic Membership</td>
+                                <td>$95/month</td>
+                                <td>8</td>
+                                <td><span class="badge bg-success">Active</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">Edit</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Premium Membership</td>
+                                <td>$120/month</td>
+                                <td>Unlimited</td>
+                                <td><span class="badge bg-success">Active</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">Edit</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Family Plan</td>
+                                <td>$200/month</td>
+                                <td>Unlimited</td>
+                                <td><span class="badge bg-warning">Draft</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">Edit</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="mb-4">
+                <label class="form-label">Belt System</label>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6>Current Belt Order</h6>
+                                <ul class="list-group">
+                                    <li class="list-group-item">White Belt</li>
+                                    <li class="list-group-item">Yellow Belt</li>
+                                    <li class="list-group-item">Orange Belt</li>
+                                    <li class="list-group-item">Green Belt</li>
+                                    <li class="list-group-item">Blue Belt</li>
+                                    <li class="list-group-item">Brown Belt</li>
+                                    <li class="list-group-item">Black Belt</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6>Testing Requirements</h6>
+                                <div class="mb-3">
+                                    <label class="form-label">Minimum Time Between Tests</label>
+                                    <input type="number" class="form-control" value="3" min="1">
+                                    <small class="text-muted">Months</small>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Minimum Attendance</label>
+                                    <input type="number" class="form-control" value="75" min="1" max="100">
+                                    <small class="text-muted">Percentage</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="btn btn-primary">Save Changes</button>
+        </div>
+
+        <!-- Billing Settings -->
+        <div class="page-section setting-content" id="billing-settings">
+            <h3 class="section-title mb-4">Billing Settings</h3>
+            
+            <div class="mb-4">
+                <label class="form-label">Payment Methods</label>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <i class="fas fa-credit-card fa-2x text-primary me-3"></i>
+                                <span class="h6">Credit/Debit Cards</span>
+                            </div>
+                            <div>
+                                <span class="badge bg-success me-2">Active</span>
+                                <button class="btn btn-sm btn-outline-primary">Configure</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <i class="fas fa-university fa-2x text-success me-3"></i>
+                                <span class="h6">Bank Transfer</span>
+                            </div>
+                            <div>
+                                <span class="badge bg-success me-2">ACTIVE</span>
+                                <button class="btn btn-sm btn-outline-primary">Configure</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <i class="fab fa-paypal fa-2x text-info me-3"></i>
+                                <span class="h6">PayPal</span>
+                            </div>
+                            <div>
+                                <span class="badge bg-warning me-2">SETUP REQUIRED</span>
+                                <button class="btn btn-sm btn-outline-primary">Setup</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-4">
+                <label class="form-label">Invoice Settings</label>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Invoice Prefix</label>
+                            <input type="text" class="form-control" value="INV">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Next Invoice Number</label>
+                            <input type="number" class="form-control" value="49">
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Payment Terms</label>
+                    <select class="form-select">
+                        <option selected>Net 15</option>
+                        <option>Net 30</option>
+                        <option>Due on Receipt</option>
+                    </select>
+                </div>
+                <div class="form-check form-switch mb-3">
+                    <input class="form-check-input" type="checkbox" id="autoReminders" checked>
+                    <label class="form-check-label" for="autoReminders">
+                        Send automatic payment reminders
+                    </label>
+                </div>
+            </div>
+            
+            <button class="btn btn-primary">Save Changes</button>
+        </div>
+
+        <!-- Notifications Settings -->
+        <div class="page-section setting-content" id="notifications-settings">
+            <h3 class="section-title mb-4">Notification Settings</h3>
+            
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="mb-0">Email Notifications</h5>
+                </div>
+                <div class="card-body">
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input" type="checkbox" id="emailNewMembers" checked>
+                        <label class="form-check-label" for="emailNewMembers">
+                            New member registrations
+                        </label>
+                    </div>
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input" type="checkbox" id="emailPayments" checked>
+                        <label class="form-check-label" for="emailPayments">
+                            Payment receipts and reminders
+                        </label>
+                    </div>
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input" type="checkbox" id="emailClassUpdates" checked>
+                        <label class="form-check-label" for="emailClassUpdates">
+                            Class schedule updates
+                        </label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="emailSystem">
+                        <label class="form-check-label" for="emailSystem">
+                            System notifications
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="mb-0">SMS Notifications</h5>
+                </div>
+                <div class="card-body">
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input" type="checkbox" id="smsClassReminders" checked>
+                        <label class="form-check-label" for="smsClassReminders">
+                            Class reminders (1 hour before)
+                        </label>
+                    </div>
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input" type="checkbox" id="smsScheduleChanges">
+                        <label class="form-check-label" for="smsScheduleChanges">
+                            Schedule changes
+                        </label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="smsUrgent">
+                        <label class="form-check-label" for="smsUrgent">
+                            Urgent announcements
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">Push Notifications</h5>
+                </div>
+                <div class="card-body">
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input" type="checkbox" id="pushNewMessages" checked>
+                        <label class="form-check-label" for="pushNewMessages">
+                            New messages
+                        </label>
+                    </div>
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input" type="checkbox" id="pushTaskReminders" checked>
+                        <label class="form-check-label" for="pushTaskReminders">
+                            Task reminders
+                        </label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="pushSystemUpdates">
+                        <label class="form-check-label" for="pushSystemUpdates">
+                            System updates
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="btn btn-primary mt-4">Save Changes</button>
+        </div>
+
+        <!-- Security Settings -->
+        <div class="page-section setting-content" id="security-settings">
+            <h3 class="section-title mb-4">Security Settings</h3>
+            
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="mb-0">Password & Authentication</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label">Current Password</label>
+                        <input type="password" class="form-control" placeholder="Enter current password">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">New Password</label>
+                        <input type="password" class="form-control" placeholder="Enter new password">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Confirm New Password</label>
+                        <input type="password" class="form-control" placeholder="Confirm new password">
+                    </div>
+                    <button class="btn btn-primary">Update Password</button>
+                </div>
+            </div>
+            
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="mb-0">Two-Factor Authentication</h5>
+                </div>
+                <div class="card-body">
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input" type="checkbox" id="twoFactorAuth">
+                        <label class="form-check-label" for="twoFactorAuth">
+                            Enable two-factor authentication
+                        </label>
+                    </div>
+                    <p class="text-muted small">Add an extra layer of security to your account by requiring a verification code in addition to your password.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">Session Management</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label">Auto Logout</label>
+                        <select class="form-select">
+                            <option selected>30 minutes</option>
+                            <option>1 hour</option>
+                            <option>2 hours</option>
+                            <option>4 hours</option>
+                            <option>Never</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Active Sessions</label>
+                        <div class="list-group">
+                            <div class="list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <strong>Chrome - Windows</strong><br>
+                                    <small class="text-muted">Last active: 2 hours ago</small>
+                                </div>
+                                <button class="btn btn-sm btn-outline-danger">Logout</button>
+                            </div>
+                            <div class="list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <strong>Safari - iPhone</strong><br>
+                                    <small class="text-muted">Last active: 1 day ago</small>
+                                </div>
+                                <button class="btn btn-sm btn-outline-danger">Logout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Integrations Settings -->
+        <div class="page-section setting-content" id="integrations-settings">
+            <h3 class="section-title mb-4">Integrations</h3>
+            
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <i class="fab fa-google fa-2x text-danger me-3"></i>
+                            <span class="h6">Google Calendar</span>
+                        </div>
+                        <div>
+                            <span class="badge bg-success me-2">CONNECTED</span>
+                            <button class="btn btn-sm btn-outline-primary">Configure</button>
+                        </div>
+                    </div>
+                    <p class="text-muted mt-2 mb-0">Sync your class schedule with Google Calendar</p>
+                </div>
+            </div>
+            
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <i class="fab fa-stripe fa-2x text-primary me-3"></i>
+                        <span class="h6">Stripe Payments</span>
+                        </div>
+                        <div>
+                            <span class="badge bg-success me-2">CONNECTED</span>
+                            <button class="btn btn-sm btn-outline-primary">Configure</button>
+                        </div>
+                    </div>
+                    <p class="text-muted mt-2 mb-0">Process credit card payments securely</p>
+                </div>
+            </div>
+            
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <i class="fas fa-envelope fa-2x text-warning me-3"></i>
+                            <span class="h6">Mailchimp</span>
+                        </div>
+                        <div>
+                            <span class="badge bg-warning me-2">SETUP REQUIRED</span>
+                            <button class="btn btn-sm btn-outline-primary">Setup</button>
+                        </div>
+                    </div>
+                    <p class="text-muted mt-2 mb-0">Send email newsletters to members</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <i class="fab fa-slack fa-2x text-info me-3"></i>
+                            <span class="h6">Slack</span>
+                        </div>
+                        <div>
+                            <span class="badge bg-secondary me-2">NOT CONNECTED</span>
+                            <button class="btn btn-sm btn-outline-primary">Connect</button>
+                        </div>
+                    </div>
+                    <p class="text-muted mt-2 mb-0">Receive notifications in your Slack workspace</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// Settings menu functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const menuItems = document.querySelectorAll('#settingsMenu .list-group-item');
+    const settingContents = document.querySelectorAll('.setting-content');
+    
+    menuItems.forEach(item => {
+        item.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Remove active class from all menu items and contents
+            menuItems.forEach(i => i.classList.remove('active'));
+            settingContents.forEach(c => c.classList.remove('active'));
+            
+            // Add active class to clicked menu item
+            this.classList.add('active');
+            
+            // Show corresponding content
+            const settingType = this.getAttribute('data-setting');
+            document.getElementById(`${settingType}-settings`).classList.add('active');
+        });
+    });
+});
+</script>

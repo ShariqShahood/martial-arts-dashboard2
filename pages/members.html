@@ -1,0 +1,108 @@
+<div class="page-header">
+    <h1>Members Management</h1>
+    <p>Manage all dojo members and their profiles</p>
+</div>
+
+<div class="stats-grid">
+    <div class="stat-card">
+        <div class="stat-icon" style="background: var(--primary);">
+            <i class="fas fa-users"></i>
+        </div>
+        <div class="stat-info">
+            <div class="stat-value">142</div>
+            <div class="stat-label">Total Members</div>
+        </div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-icon" style="background: var(--success);">
+            <i class="fas fa-user-check"></i>
+        </div>
+        <div class="stat-info">
+            <div class="stat-value">128</div>
+            <div class="stat-label">Active Members</div>
+        </div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-icon" style="background: var(--warning);">
+            <i class="fas fa-user-clock"></i>
+        </div>
+        <div class="stat-info">
+            <div class="stat-value">14</div>
+            <div class="stat-label">Pending Members</div>
+        </div>
+    </div>
+</div>
+
+<div class="page-section">
+    <div class="section-header">
+        <h3 class="section-title">All Members</h3>
+        <button class="btn btn-primary">
+            <i class="fas fa-plus"></i> Add Member
+        </button>
+    </div>
+    
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Member ID</th>
+                    <th>Name</th>
+                    <th>Rank</th>
+                    <th>Join Date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#M-1001</td>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Member" class="rounded-circle me-2" width="32" height="32">
+                            Alex Johnson
+                        </div>
+                    </td>
+                    <td>Black Belt</td>
+                    <td>Jan 10, 2020</td>
+                    <td><span class="status-badge status-active">Active</span></td>
+                    <td>
+                        <button class="btn btn-sm btn-outline-primary">View</button>
+                        <button class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#M-1002</td>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Member" class="rounded-circle me-2" width="32" height="32">
+                            Sarah Miller
+                        </div>
+                    </td>
+                    <td>Brown Belt</td>
+                    <td>Mar 15, 2021</td>
+                    <td><span class="status-badge status-active">Active</span></td>
+                    <td>
+                        <button class="btn btn-sm btn-outline-primary">View</button>
+                        <button class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#M-1003</td>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Member" class="rounded-circle me-2" width="32" height="32">
+                            Michael Chen
+                        </div>
+                    </td>
+                    <td>Blue Belt</td>
+                    <td>Jun 05, 2022</td>
+                    <td><span class="status-badge status-pending">Pending</span></td>
+                    <td>
+                        <button class="btn btn-sm btn-outline-primary">View</button>
+                        <button class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
